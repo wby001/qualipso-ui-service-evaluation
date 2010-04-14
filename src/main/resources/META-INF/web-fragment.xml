@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		Authors Jerome Blanchard <jayblanc@gmail.com> - Christophe Bouthier <christophe.bouthier@loria.fr>
+		Date 19 January 2010
+	-->
+<web-fragment>
+	<name>FactoryUiServiceEvaluation</name>
+	<servlet>
+		<description>Servlet</description>
+		<display-name>EvaluationServlet</display-name>
+		<servlet-name>EvaluationServlet</servlet-name>
+		<servlet-class>org.qualipso.factory.ui.service.evaluation.server.EvaluationServletImpl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EvaluationServlet</servlet-name>
+		<url-pattern>/evaluation/evaluation</url-pattern>
+	</servlet-mapping>
+</web-fragment>

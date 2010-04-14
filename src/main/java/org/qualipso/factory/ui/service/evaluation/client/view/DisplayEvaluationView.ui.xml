@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+	<!-- Auther Wang Baiying (bywang411@163.com)-->
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field='resources'
+		type='org.qualipso.factory.ui.service.evaluation.client.resources.EvaluationResources' />
+	<g:FlowPanel ui:field="flowPanel" styleName='{resources.style.flowpanel}'>
+		<g:FlowPanel>
+			<g:Label ui:field="projectLabel" styleName='{resources.style.title}'>Project list</g:Label>
+			<g:FlexTable ui:field="projectFlexTable" styleName='{resources.style.flextable}'></g:FlexTable>
+		</g:FlowPanel>
+		<g:FlowPanel>
+			<g:Label ui:field="gqmLabel" styleName='{resources.style.title}'>Goal-Question-metric(GQM)
+				evaluation</g:Label>
+				<g:Hyperlink ui:field="configParasForSEHyperlink"
+				targetHistoryToken="">Config parameters for Spgao4q extractor</g:Hyperlink>
+			<g:Hyperlink ui:field="goToGQMHyperlink"
+				targetHistoryToken="">Go to GQM evaluation </g:Hyperlink>
+			<g:Hyperlink ui:field="gqmReportHyperlink"
+				targetHistoryToken="">GQM evaluation report</g:Hyperlink>
+		</g:FlowPanel>
+		<g:FlowPanel>
+			<g:Label ui:field="ommLabel" styleName='{resources.style.title}'>OpenSource Maturity
+				Model(OMM) evaluation</g:Label>
+			<g:Hyperlink ui:field="goToOMMHyperlink"
+				targetHistoryToken="">Go to OMM evaluation </g:Hyperlink>
+		</g:FlowPanel>
+	</g:FlowPanel>
+</ui:UiBinder> 
